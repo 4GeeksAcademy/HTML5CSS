@@ -1,29 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title></title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
-</head>
-<body>
-    <div>
-        <div>
-            <h1 class="header">Our Funky HTML Page</h1>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="form">
+            <div class="title">
+                <h1>Payment form example</h1>
+            </div>
+            <div class="alert"><strong>Some fields are missing</strong>
+            </div>
+        <table>
+            <div class="info">
+                <form>
+                    <div class="input1">
+                        <fieldset>
+                        <label for="card number">Card #</label>
+                        <input type="number" name="card number" id="cardnumber"  value="number">
+                        </fieldset>
+                    </div>
+                    <div class="input2">
+                        <legend style="float:left"></legend>
+                        <fieldset>
+                        <label for="Cvc number"> CVC#</label>
+                        <input type="number" name="Cvc number" id="Cvc Number" value="number">
+                        </fieldset>
+                    </div>
+                    <div class="input3">
+                        <fieldset>
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" value="number">
+                </fieldset>
+                    </div>  
+                </form>
+            </div>
+        </table>
+        <table>
+            <div class="name">
+                <label for="first name">First Name</label>
+                <input type="text" name="First Name" id="First Name" value="text">
+                <label for="last name">Last Name</label>
+                <input type="text" name="Last Name" id="Last Name" value="text">
+            </div>
+
+        </table>
+        <table>
+            <div class="name">
+                <label for="City">City</label>
+                <input type="text" name="city" id="city" value="text">
+                <label for="State>State</label>
+                <input type="text" name="state" id="state" value="text">
+                <label for="postal code">Postal Code</label>
+                <input type="number" name="Postal Code" id="Postal Code" value="number">
+            </div>
+        </table>
+            <div class="payment">
+                <label for="payment">We accept</label>
+                <input type="button" name="state" id="state" value="text">
+            </div>
+            <div class="message">
+                <label for="City">Message</label>
+                <input type="text" name="message" id="message" value="text">
+                
+            </div>
+            <div class="footer">
+                <input type="button" name="state" id="state" value="cancel">
+                <input type="button" name="state" id="state" value="send">
+            </div>
         </div>
-        <div class="alert">Some fields are missing</div>
-    <table>
-        <form>
-            <input type="number" name="card number" id="cardnumber"  value="number">
-            <label for=""card number">Card #</label>
-            <input type="number" name="Cvc number" id="Cvc Number" value="number">
-            <label for="Cvc number"> CVC#</label>
-            <input type="number" name="amount" id="amount" value="number">
-            <label for="amount">Amount</label>
-        </form>
-    </table>
-    <table>
-        <thead>First name</thead>
-    </table>
-</div>
-</body>
+    </body>
 </html>
